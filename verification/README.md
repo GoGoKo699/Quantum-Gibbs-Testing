@@ -60,7 +60,7 @@ $$
 +\frac{2}{N(N-1)}\operatorname{Tr}(\Sigma^2),
 $$
 
-where $\mu=\mathbb E D$ and $\Sigma=\operatorname{Cov}(D)$. This identity is valid for independent finite-variance vectors regardless of temperature. The illustrative $\beta=0.25$ used here is not a claim that the theorem's high-temperature promise extends to that value.
+where $\mu=\mathbb E D$ and $\Sigma=\operatorname{Cov}(D)$. This identity is valid for independent, identically distributed finite-variance vectors regardless of temperature. The illustrative $\beta=0.25$ used here is not a claim that the theorem's high-temperature promise extends to that value.
 
 ## Fixed-source sign mixture
 
