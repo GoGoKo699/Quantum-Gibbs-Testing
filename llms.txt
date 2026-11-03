@@ -1,0 +1,19 @@
+# Quantum Gibbs Testing
+
+Compare two unknown Gibbs sources in a known bounded-overlap Pauli family at sufficiently high temperature. Local measurements achieve optimal worst-case total copy complexity Theta(sqrt(M)/epsilon^2) in an explicit nonvacuous separation range, even against an unrestricted collective-measurement benchmark.
+
+## Reading routes
+
+- Overview and scientific navigation: README.md.
+- Exact assumptions, trace-norm convention, copy counting and theorem: science/model.md.
+- Imported log-partition curvature and global-to-local separation: science/thermal-geometry.md.
+- Duhamel versus ordinary covariance, Harris inequality, overlap counting and local snapshot noise: science/covariance-bound.md.
+- Unbiased quadratic statistic, variance, confidence, streaming implementation and resource costs: science/testing-algorithm.md.
+- Independent-set reduction, random-sign product family and collective converse: science/collective-lower-bound.md.
+- Physical interpretation, non-Gibbs parity counterexample and limitations: science/interpretation.md.
+- Prior results, inherited tools and comparison scope: references/RELATED_WORK.md and references/references.bib.
+- Executable finite checks and their limits: verification/README.md.
+
+## Preserve these distinctions
+
+The unhalved trace norm is used. Both sources satisfy the known-menu Gibbs promise with the same known positive inverse temperature and bounded coupling coefficients. The stated temperature bound is sufficient and conservative. The matching lower bound has an explicit epsilon/beta/M range. Exact equality is the null hypothesis; constant-gap tolerant testing is not established. The known interaction menu is stronger than a promise of an unknown sparse interaction graph. Copy complexity is separate from readout workload and physical preparation time. Noncommuting thermal fluctuations use Duhamel covariance, which must not be identified with ordinary covariance without the stated comparison. Finite numerical examples do not prove uniform curvature or a broader temperature theorem.
