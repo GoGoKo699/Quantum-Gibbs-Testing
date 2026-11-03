@@ -68,7 +68,7 @@ with $`N`$ copies of each source, for $`2N`$ copies in all. The statistic can be
 
 ```math
 0\lt \varepsilon\leq
-\min\left\{\frac1{16},\frac{\beta}{8}\sqrt{\frac M d}\right\},
+\min\left\{\frac1{16},\frac{\beta}{8}(M/d)^{1/2}\right\},
 ```
 
 any test that succeeds uniformly with probability at least $`2/3`$ needs

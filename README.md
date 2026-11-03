@@ -24,7 +24,7 @@ The upper bound holds for the promised equality-versus-separation problem throug
 
 ```math
 0\lt \varepsilon\leq
-\min\left\{\frac1{16},\frac{\beta}{8}\sqrt{\frac M d}\right\}.
+\min\left\{\frac1{16},\frac{\beta}{8}(M/d)^{1/2}\right\}.
 ```
 
 Constants depend on fixed interaction weight and overlap degree. The temperature condition is conservative. Both inputs must obey the same known-menu Gibbs promise; this is not certification against arbitrary nonthermal alternatives. The [precise model and theorem](science/model.md) state all quantifiers and resource conventions.
