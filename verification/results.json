@@ -1,0 +1,499 @@
+{
+  "status": "passed",
+  "arithmetic": "IEEE double-precision floating point",
+  "method": "Deterministic enumeration and dense linear algebra; no Monte Carlo.",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "source_script_sha256": "a635352b2ad748772b40832db75ed936347d4de10fc71e5a38086a5737a446a5",
+  "scope": "Finite-dimensional checks of load-bearing identities and selected inequalities, not a proof of asymptotic optimality or a numerical extension of the stated temperature range.",
+  "geometry_and_snapshot_cases": [
+    {
+      "qubits": 2,
+      "menu": [
+        "XI",
+        "ZI",
+        "IX",
+        "IZ",
+        "XX",
+        "YY"
+      ],
+      "coefficients": [
+        0.28816957330840137,
+        0.7292328001914605,
+        0.4998427536078517,
+        -0.1891004154998551,
+        -0.7041855346782419,
+        -0.5718457207914305
+      ],
+      "beta": 7.378925232512545e-12,
+      "interpretation": "proved_temperature_example",
+      "outcomes_enumerated": 36,
+      "maximum_overlap_degree": 5,
+      "normalized_curvature_eigenvalue_range": [
+        0.999999999994493,
+        1.000000000007483
+      ],
+      "maximum_identity_errors": {
+        "born_probability_sum": 3.3306690738754696e-16,
+        "snapshot_mean": 6.520661663758605e-17,
+        "snapshot_second_moment": 1.7763568394002505e-15,
+        "bkm_vs_frechet_curvature": 5.551115123125783e-16,
+        "disjoint_covariance_correction": 6.516016377443174e-17
+      },
+      "minimum_eigenvalues": {
+        "bkm": 0.9999999999944932,
+        "ordinary_minus_bkm": -2.526510310754152e-16,
+        "harris_slack": -5.341130412242216e-16,
+        "nested_commutator": 2.2035200680018303e-16,
+        "snapshot_covariance": 2.999999999994802,
+        "nested_operator_bound_slack": 287.99999999992184,
+        "covariance_bound_formula_slack": 46.50000000017708
+      },
+      "snapshot_covariance_operator_norm": 8.999999999999995,
+      "covariance_bound_formula_C_beta": 55.500000000177096,
+      "sufficient_temperature_threshold": 1.475785046502509e-11,
+      "within_proved_temperature_regime": true,
+      "snapshot_correction_maximum_absolute_row_sum": 8.000000000011626,
+      "snapshot_correction_row_bound": 54,
+      "nested_nonzero_triples": 68,
+      "maximum_admissible_triples_at_fixed_i_or_j": 36,
+      "triple_count_bound": 72,
+      "incompatible_but_commuting_pair": {
+        "words": [
+          "YY",
+          "XX"
+        ],
+        "snapshot_product_expectation": 0.0,
+        "thermal_symmetrized_product_expectation": -1.942890293094024e-16
+      },
+      "limitations": "A finite example inside the explicit sufficient temperature regime."
+    },
+    {
+      "qubits": 2,
+      "menu": [
+        "XI",
+        "ZI",
+        "IX",
+        "IZ",
+        "XX",
+        "YY"
+      ],
+      "coefficients": [
+        0.28816957330840137,
+        0.7292328001914605,
+        0.4998427536078517,
+        -0.1891004154998551,
+        -0.7041855346782419,
+        -0.5718457207914305
+      ],
+      "beta": 0.2,
+      "interpretation": "moderate_temperature_illustration",
+      "outcomes_enumerated": 36,
+      "maximum_overlap_degree": 5,
+      "normalized_curvature_eigenvalue_range": [
+        0.8384366800264115,
+        1.17737465759758
+      ],
+      "maximum_identity_errors": {
+        "born_probability_sum": 0.0,
+        "snapshot_mean": 3.469446951953614e-17,
+        "snapshot_second_moment": 1.7763568394002505e-15,
+        "bkm_vs_frechet_curvature": 5.551115123125783e-16,
+        "disjoint_covariance_correction": 6.418476861114186e-17
+      },
+      "minimum_eigenvalues": {
+        "bkm": 0.8384366800264114,
+        "ordinary_minus_bkm": 4.0296555087698523e-16,
+        "harris_slack": -4.395346117305861e-16,
+        "nested_commutator": -3.9958841943986945e-17,
+        "snapshot_covariance": 2.853236052685191,
+        "nested_operator_bound_slack": 285.8620914246446,
+        "covariance_bound_formula_slack": 51.28667319225114
+      },
+      "snapshot_covariance_operator_norm": 9.013326807748847,
+      "covariance_bound_formula_C_beta": 60.3,
+      "sufficient_temperature_threshold": 1.475785046502509e-11,
+      "within_proved_temperature_regime": false,
+      "snapshot_correction_maximum_absolute_row_sum": 8.376702447280467,
+      "snapshot_correction_row_bound": 54,
+      "nested_nonzero_triples": 68,
+      "maximum_admissible_triples_at_fixed_i_or_j": 36,
+      "triple_count_bound": 72,
+      "incompatible_but_commuting_pair": {
+        "words": [
+          "YY",
+          "XX"
+        ],
+        "snapshot_product_expectation": 0.0,
+        "thermal_symmetrized_product_expectation": 0.02133577574589679
+      },
+      "limitations": "Illustrative moderate-temperature check only; no enlarged temperature theorem is inferred."
+    },
+    {
+      "qubits": 3,
+      "menu": [
+        "XII",
+        "ZII",
+        "IXI",
+        "IIZ",
+        "XXI",
+        "YYI",
+        "IZZ",
+        "ZIZ"
+      ],
+      "coefficients": [
+        0.28816957330840137,
+        0.7292328001914605,
+        0.4998427536078517,
+        -0.1891004154998551,
+        -0.7041855346782419,
+        -0.5718457207914305,
+        0.08624641158936529,
+        0.665043990900604
+      ],
+      "beta": 2.1499026390211547e-12,
+      "interpretation": "proved_temperature_example",
+      "outcomes_enumerated": 216,
+      "maximum_overlap_degree": 6,
+      "normalized_curvature_eigenvalue_range": [
+        0.9999999999980699,
+        1.0000000000023344
+      ],
+      "maximum_identity_errors": {
+        "born_probability_sum": 0.0,
+        "snapshot_mean": 3.5074750273498794e-17,
+        "snapshot_second_moment": 3.1086244689504383e-15,
+        "bkm_vs_frechet_curvature": 4.85722573273506e-16,
+        "disjoint_covariance_correction": 9.326787097008873e-17
+      },
+      "minimum_eigenvalues": {
+        "bkm": 0.9999999999980704,
+        "ordinary_minus_bkm": -1.7792060146179104e-16,
+        "harris_slack": -8.744649992356294e-16,
+        "nested_commutator": 1.1635457976006758e-27,
+        "snapshot_covariance": 2.9999999999984843,
+        "nested_operator_bound_slack": 391.9999999999798,
+        "covariance_bound_formula_slack": 55.50000000007021
+      },
+      "snapshot_covariance_operator_norm": 9.000000000000004,
+      "covariance_bound_formula_C_beta": 64.50000000007023,
+      "sufficient_temperature_threshold": 4.2998052780423094e-12,
+      "within_proved_temperature_regime": true,
+      "snapshot_correction_maximum_absolute_row_sum": 8.000000000003949,
+      "snapshot_correction_row_bound": 63,
+      "nested_nonzero_triples": 112,
+      "maximum_admissible_triples_at_fixed_i_or_j": 52,
+      "triple_count_bound": 98,
+      "incompatible_but_commuting_pair": {
+        "words": [
+          "YYI",
+          "XXI"
+        ],
+        "snapshot_product_expectation": 0.0,
+        "thermal_symmetrized_product_expectation": 1.6653345369377348e-16
+      },
+      "limitations": "A finite example inside the explicit sufficient temperature regime."
+    },
+    {
+      "qubits": 3,
+      "menu": [
+        "XII",
+        "ZII",
+        "IXI",
+        "IIZ",
+        "XXI",
+        "YYI",
+        "IZZ",
+        "ZIZ"
+      ],
+      "coefficients": [
+        0.28816957330840137,
+        0.7292328001914605,
+        0.4998427536078517,
+        -0.1891004154998551,
+        -0.7041855346782419,
+        -0.5718457207914305,
+        0.08624641158936529,
+        0.665043990900604
+      ],
+      "beta": 0.2,
+      "interpretation": "moderate_temperature_illustration",
+      "outcomes_enumerated": 216,
+      "maximum_overlap_degree": 6,
+      "normalized_curvature_eigenvalue_range": [
+        0.8090196555683741,
+        1.1965982066286514
+      ],
+      "maximum_identity_errors": {
+        "born_probability_sum": 2.220446049250313e-16,
+        "snapshot_mean": 1.1102230246251565e-16,
+        "snapshot_second_moment": 1.7763568394002505e-15,
+        "bkm_vs_frechet_curvature": 5.828670879282072e-16,
+        "disjoint_covariance_correction": 8.326672684688674e-17
+      },
+      "minimum_eigenvalues": {
+        "bkm": 0.8090196555683747,
+        "ordinary_minus_bkm": 2.126691175583029e-16,
+        "harris_slack": -3.3559738878561125e-16,
+        "nested_commutator": 4.626143030018121e-17,
+        "snapshot_covariance": 2.849408351422597,
+        "nested_operator_bound_slack": 390.0267228630341,
+        "covariance_bound_formula_slack": 61.97645795404767
+      },
+      "snapshot_covariance_operator_norm": 9.056875379285664,
+      "covariance_bound_formula_C_beta": 71.03333333333333,
+      "sufficient_temperature_threshold": 4.2998052780423094e-12,
+      "within_proved_temperature_regime": false,
+      "snapshot_correction_maximum_absolute_row_sum": 8.436118443820291,
+      "snapshot_correction_row_bound": 63,
+      "nested_nonzero_triples": 112,
+      "maximum_admissible_triples_at_fixed_i_or_j": 52,
+      "triple_count_bound": 98,
+      "incompatible_but_commuting_pair": {
+        "words": [
+          "YYI",
+          "XXI"
+        ],
+        "snapshot_product_expectation": 0.0,
+        "thermal_symmetrized_product_expectation": 0.013518615909121318
+      },
+      "limitations": "Illustrative moderate-temperature check only; no enlarged temperature theorem is inferred."
+    },
+    {
+      "qubits": 4,
+      "menu": [
+        "XIII",
+        "ZIII",
+        "IXII",
+        "IIZI",
+        "IIIX",
+        "XXII",
+        "YYII",
+        "IZZI",
+        "IIZZ",
+        "ZIIZ"
+      ],
+      "coefficients": [
+        0.28816957330840137,
+        0.7292328001914605,
+        0.4998427536078517,
+        -0.1891004154998551,
+        -0.7041855346782419,
+        -0.5718457207914305,
+        0.08624641158936529,
+        0.665043990900604,
+        0.6324031919853275,
+        0.018333814835484744
+      ],
+      "beta": 2.1499026390211547e-12,
+      "interpretation": "proved_temperature_example",
+      "outcomes_enumerated": 1296,
+      "maximum_overlap_degree": 6,
+      "normalized_curvature_eigenvalue_range": [
+        0.9999999999986414,
+        1.0000000000019702
+      ],
+      "maximum_identity_errors": {
+        "born_probability_sum": 2.220446049250313e-16,
+        "snapshot_mean": 5.421010862427522e-17,
+        "snapshot_second_moment": 7.105427357601002e-15,
+        "bkm_vs_frechet_curvature": 5.828670879280705e-16,
+        "disjoint_covariance_correction": 5.2041706411138465e-17
+      },
+      "minimum_eigenvalues": {
+        "bkm": 0.9999999999986413,
+        "ordinary_minus_bkm": -7.423630540012739e-16,
+        "harris_slack": -8.746980875720545e-16,
+        "nested_commutator": -2.247774031990236e-17,
+        "snapshot_covariance": 2.9999999999987703,
+        "nested_operator_bound_slack": 391.9999999999881,
+        "covariance_bound_formula_slack": 55.50000000007022
+      },
+      "snapshot_covariance_operator_norm": 8.999999999999998,
+      "covariance_bound_formula_C_beta": 64.50000000007023,
+      "sufficient_temperature_threshold": 4.2998052780423094e-12,
+      "within_proved_temperature_regime": true,
+      "snapshot_correction_maximum_absolute_row_sum": 8.00000000000338,
+      "snapshot_correction_row_bound": 63,
+      "nested_nonzero_triples": 136,
+      "maximum_admissible_triples_at_fixed_i_or_j": 55,
+      "triple_count_bound": 98,
+      "incompatible_but_commuting_pair": {
+        "words": [
+          "YYII",
+          "XXII"
+        ],
+        "snapshot_product_expectation": 0.0,
+        "thermal_symmetrized_product_expectation": 1.3877787807814457e-16
+      },
+      "limitations": "A finite example inside the explicit sufficient temperature regime."
+    },
+    {
+      "qubits": 4,
+      "menu": [
+        "XIII",
+        "ZIII",
+        "IXII",
+        "IIZI",
+        "IIIX",
+        "XXII",
+        "YYII",
+        "IZZI",
+        "IIZZ",
+        "ZIIZ"
+      ],
+      "coefficients": [
+        0.28816957330840137,
+        0.7292328001914605,
+        0.4998427536078517,
+        -0.1891004154998551,
+        -0.7041855346782419,
+        -0.5718457207914305,
+        0.08624641158936529,
+        0.665043990900604,
+        0.6324031919853275,
+        0.018333814835484744
+      ],
+      "beta": 0.2,
+      "interpretation": "moderate_temperature_illustration",
+      "outcomes_enumerated": 1296,
+      "maximum_overlap_degree": 6,
+      "normalized_curvature_eigenvalue_range": [
+        0.8616017121198026,
+        1.1610859909264224
+      ],
+      "maximum_identity_errors": {
+        "born_probability_sum": 0.0,
+        "snapshot_mean": 1.1102230246251565e-16,
+        "snapshot_second_moment": 5.329070518200751e-15,
+        "bkm_vs_frechet_curvature": 6.661338147750939e-16,
+        "disjoint_covariance_correction": 9.71445146547012e-17
+      },
+      "minimum_eigenvalues": {
+        "bkm": 0.8616017121198023,
+        "ordinary_minus_bkm": -4.925519710600667e-16,
+        "harris_slack": -1.9824920611232697e-16,
+        "nested_commutator": -1.2136584201014895e-16,
+        "snapshot_covariance": 2.879768471966785,
+        "nested_operator_bound_slack": 390.824520761241,
+        "covariance_bound_formula_slack": 62.00576874404006
+      },
+      "snapshot_covariance_operator_norm": 9.027564589293274,
+      "covariance_bound_formula_C_beta": 71.03333333333333,
+      "sufficient_temperature_threshold": 4.2998052780423094e-12,
+      "within_proved_temperature_regime": false,
+      "snapshot_correction_maximum_absolute_row_sum": 8.350162278443335,
+      "snapshot_correction_row_bound": 63,
+      "nested_nonzero_triples": 136,
+      "maximum_admissible_triples_at_fixed_i_or_j": 55,
+      "triple_count_bound": 98,
+      "incompatible_but_commuting_pair": {
+        "words": [
+          "YYII",
+          "XXII"
+        ],
+        "snapshot_product_expectation": 0.0,
+        "thermal_symmetrized_product_expectation": -0.002618802724137656
+      },
+      "limitations": "Illustrative moderate-temperature check only; no enlarged temperature theorem is inferred."
+    }
+  ],
+  "u_statistic_cases": [
+    {
+      "hypothesis": "equal",
+      "qubits": 2,
+      "menu": [
+        "XI",
+        "ZI"
+      ],
+      "beta": 0.25,
+      "difference_vector_support_size": 13,
+      "interpretation": "Finite statistical identity; moderate beta is illustrative.",
+      "cases": [
+        {
+          "paired_snapshots": 2,
+          "joint_outcomes_enumerated": 169,
+          "mean": 5.551115123125783e-17,
+          "mean_identity_error": 5.5511151231252465e-17,
+          "variance": 71.24064108945446,
+          "variance_from_formula": 71.24064108945444,
+          "variance_identity_error": 1.4210854715202004e-14
+        },
+        {
+          "paired_snapshots": 3,
+          "joint_outcomes_enumerated": 2197,
+          "mean": 2.2985086056692694e-17,
+          "mean_identity_error": 2.2985086056687335e-17,
+          "variance": 23.74688036315153,
+          "variance_from_formula": 23.74688036315148,
+          "variance_identity_error": 4.973799150320701e-14
+        }
+      ]
+    },
+    {
+      "hypothesis": "different",
+      "qubits": 2,
+      "menu": [
+        "XI",
+        "ZI"
+      ],
+      "beta": 0.25,
+      "difference_vector_support_size": 13,
+      "interpretation": "Finite statistical identity; moderate beta is illustrative.",
+      "cases": [
+        {
+          "paired_snapshots": 2,
+          "joint_outcomes_enumerated": 169,
+          "mean": 0.12340774283399968,
+          "mean_identity_error": 4.163336342344337e-17,
+          "variance": 72.66309213606336,
+          "variance_from_formula": 72.66309213606334,
+          "variance_identity_error": 1.4210854715202004e-14
+        },
+        {
+          "paired_snapshots": 3,
+          "joint_outcomes_enumerated": 2197,
+          "mean": 0.12340774283400018,
+          "mean_identity_error": 5.412337245047638e-16,
+          "variance": 24.70958091364857,
+          "variance_from_formula": 24.709580913648644,
+          "variance_identity_error": 7.460698725481052e-14
+        }
+      ]
+    }
+  ],
+  "sign_mixture": {
+    "coordinates": 3,
+    "bias": 0.17,
+    "signs_are_fixed_across_copies": true,
+    "interpretation": "Algebraic sign-mixture identity. The moderate bias makes the identity numerically visible; theorem feasibility at the declared temperature is established analytically in the lower-bound proof.",
+    "cases": [
+      {
+        "copies": 1,
+        "transcripts_enumerated": 8,
+        "likelihood_normalization_error": 1.1102230246251565e-16,
+        "chi_square": 1.232595164407831e-32,
+        "chi_square_formula": 0.0,
+        "identity_error": 1.232595164407831e-32
+      },
+      {
+        "copies": 2,
+        "transcripts_enumerated": 64,
+        "likelihood_normalization_error": 4.440892098500626e-16,
+        "chi_square": 0.002507723309854532,
+        "chi_square_formula": 0.0025077233098544927,
+        "identity_error": 3.946495907847236e-17
+      },
+      {
+        "copies": 3,
+        "transcripts_enumerated": 512,
+        "likelihood_normalization_error": 4.440892098500626e-16,
+        "chi_square": 0.007535740275891097,
+        "chi_square_formula": 0.007535740275890879,
+        "identity_error": 2.185751579730777e-16
+      }
+    ]
+  }
+}
