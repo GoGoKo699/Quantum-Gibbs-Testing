@@ -14,4 +14,4 @@ node verification/hosted_math/capture_hosted_math.cjs \
   --output /tmp/gibbs-hosted-evidence
 ```
 
-Use a new output directory for each run. The workflow installs Playwright 1.56.1 and MathJax 3.2.1 in a temporary dependency directory. Source compilation supplies the comparison reference; only captured GitHub content supplies the hosted evidence. Renderer diagnostics and structural equality do not establish scientific validity or replace visual review.
+Use a new output directory for each run. The workflow uses Ubuntu 24.04 and installs Playwright 1.56.1 and MathJax 3.2.1 in a temporary dependency directory. Source compilation supplies the comparison reference; only captured GitHub content supplies the hosted evidence. Renderer diagnostics and structural equality do not establish scientific validity or replace visual review.
