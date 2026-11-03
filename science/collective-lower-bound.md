@@ -17,7 +17,7 @@ H_h=\sum_{a=1}^M h_aP_a,\qquad
 Assume $`M\ge1`$ and
 
 ```math
-0<\varepsilon\le
+0\lt \varepsilon\le
 \min\left\{\frac1{16},\frac{\beta\sqrt{M/d}}8\right\}.
 ```
 
@@ -162,10 +162,10 @@ If $`S\le\sqrt L/(64\varepsilon^2)`$, then
 \frac{LS^2r^4}{2}\le\frac1{32},\qquad
 \mathrm{TV}(\overline p_S,u_S)
 \le\frac12\sqrt{e^{1/32}-1}
-<0.09<\frac13.
+\lt 0.09\lt \frac13.
 ```
 
-The optimal success probability for distinguishing the null from this mixture with equal prior probabilities is $`(1+\mathrm{TV})/2<2/3`$.
+The optimal success probability for distinguishing the null from this mixture with equal prior probabilities is $`(1+\mathrm{TV})/2\lt 2/3`$.
 
 ## 4. Why adaptivity and collective measurements cannot evade the bound
 
@@ -193,10 +193,10 @@ A protocol succeeding with probability at least $`2/3`$ on the null and on each 
 For fixed $`\Delta`$, the bound is $`\Omega(\sqrt M/\varepsilon^2)`$. Together with [the local-measurement upper bound](testing-algorithm.md), it gives matching scaling at the prescribed high temperature whenever
 
 ```math
-0<\varepsilon\le\min\left\{\frac1{16},\frac{\beta\sqrt{M/d}}8\right\}.
+0\lt \varepsilon\le\min\left\{\frac1{16},\frac{\beta\sqrt{M/d}}8\right\}.
 ```
 
-At any fixed positive allowed $`\beta`$ and fixed $`0<\varepsilon\le1/16`$, the second restriction holds as soon as
+At any fixed positive allowed $`\beta`$ and fixed $`0\lt \varepsilon\le1/16`$, the second restriction holds as soon as
 
 ```math
 M\ge\frac{64d\varepsilon^2}{\beta^2}.

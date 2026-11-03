@@ -84,7 +84,7 @@ This example connects [M12](MILESTONES.md#m12-synthesis-of-the-promised-comparis
 Take one qubit and the known menu $`\{Z\}`$. Thus $`n=M=k=d=1`$ and $`\Delta=0`$. Fix any inverse temperature in the theorem's range,
 
 ```math
-0<\beta\le\frac1{100e^6}.
+0\lt \beta\le\frac1{100e^6}.
 ```
 
 For the example pair, let
@@ -113,7 +113,7 @@ The eigenvalues of $`\rho_A-\tau`$ are $`r/2`$ and $`-r/2`$, so
 \mathrm{Tr}(\rho_AZ)-\mathrm{Tr}(\tau Z)=r.
 ```
 
-This pair satisfies the alternative promise. It also lies in the matching lower-bound range because $`r<\beta/16<\beta/8`$ and $`r<1/16`$. The specified coefficients allow the example to be calculated exactly; the protocol itself receives independent copies, the menu, $`\beta`$ and $`\varepsilon`$.
+This pair satisfies the alternative promise. It also lies in the matching lower-bound range because $`r\lt \beta/16\lt \beta/8`$ and $`r\lt 1/16`$. The specified coefficients allow the example to be calculated exactly; the protocol itself receives independent copies, the menu, $`\beta`$ and $`\varepsilon`$.
 
 ### From measurement outcomes to unbiased scores
 

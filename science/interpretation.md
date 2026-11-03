@@ -20,10 +20,10 @@ For $`n>k`$, consider
 \tau=2^{-n}I,
 \qquad
 \omega=2^{-n}\bigl(I+\varepsilon Z^{\otimes n}\bigr),
-\qquad 0<\varepsilon\leq1.
+\qquad 0\lt \varepsilon\leq1.
 ```
 
-These are valid states and $`\lVert\omega-\tau\rVert_1=\varepsilon`$. Every nonidentity Pauli string of weight at most $`k`$ has zero expectation in both states. Therefore their interaction-moment vectors agree for any menu of that weight, despite their global separation. For $`\varepsilon<1`$, the logarithm of $`\omega`$ contains the full-weight parity operator and cannot be represented using only such a bounded-weight menu; $`\varepsilon=1`$ is additionally not full rank.
+These are valid states and $`\lVert\omega-\tau\rVert_1=\varepsilon`$. Every nonidentity Pauli string of weight at most $`k`$ has zero expectation in both states. Therefore their interaction-moment vectors agree for any menu of that weight, despite their global separation. For $`\varepsilon\lt 1`$, the logarithm of $`\omega`$ contains the full-weight parity operator and cannot be represented using only such a bounded-weight menu; $`\varepsilon=1`$ is additionally not full rank.
 
 This example defeats the moment-to-trace-norm implication outside the promised family. It does not assert that the complete local measurement record contains no parity information: measuring all qubits in the Z basis does expose that information. The point is precise: the theorem's interaction-moment statistic and its soundness proof rely on **both** sources satisfying the family promise. They are not a generic detector of an arbitrary malfunctioning source.
 

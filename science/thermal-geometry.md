@@ -13,7 +13,7 @@ H_h=\sum_{a=1}^M h_aP_a,
 \qquad Z_h=\mathrm{Tr}e^{-\beta H_h},
 \qquad \rho_h=\frac{e^{-\beta H_h}}{Z_h},
 \qquad L(h)=\log Z_h.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 All logarithms in this page are natural. The norm $`\Vert \rho-\sigma\Vert _1`$ is the **unhalved** trace norm. The convention sometimes called trace distance is half this quantity.
@@ -21,17 +21,17 @@ All logarithms in this page are natural. The norm $`\Vert \rho-\sigma\Vert _1`$ 
 Join distinct menu terms when their supports intersect. Let $`\Delta`$ be a supplied upper bound on the maximum degree of this graph and write $`d=\Delta+1`$. Throughout, assume
 
 ```math
-0<\beta\le\beta_0,
+0\lt \beta\le\beta_0,
 \qquad
 \beta_0=\frac{1}{100e^6(\Delta+1)^8}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The observable vector is
 
 ```math
 \mu(h)_a=\mathrm{Tr}(\rho_hP_a).
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Neither the coefficients nor the partition function need to be computed by the tester. They specify the statistical promise used in the proof.
@@ -46,14 +46,14 @@ Their assumptions match this family: bounded real coefficients, traceless terms 
 \mathrm{Tr}P_a=0,
 \qquad 2^{-n}\mathrm{Tr}(P_aP_b)=\delta_{ab},
 \qquad \|P_a\|_{\mathrm{op}}=1.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Their exact moment-map Jacobian $`J(h)=\nabla_h\mu(h)`$ satisfies, uniformly on the coefficient cube,
 
 ```math
 \left\|I_M+\beta^{-1}J(h)\right\|_{\infty\to\infty}\le\frac12.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Differentiation of (1) gives
@@ -61,7 +61,7 @@ Differentiation of (1) gives
 ```math
 \nabla_h L(h)=-\beta\mu(h),
 \qquad \nabla_h^2L(h)=-\beta J(h).
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Consequently $`J(h)`$ is real symmetric. For a real symmetric matrix, the spectral norm is bounded by its maximum absolute row sum. Thus (5) implies
@@ -73,7 +73,7 @@ Consequently $`J(h)`$ is real symmetric. For a real symmetric matrix, the spectr
 \preceq\frac{3\beta^2}{2}I_M
 \quad\text{for every }h\in[-1,1]^M.
 }
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Both sides of (7) are present in the cited proof. Equation (2) is a sufficient explicit temperature condition; no claim is made that it is the largest possible regime.
@@ -84,7 +84,7 @@ For completeness, an actual overlap degree of zero can be checked directly witho
 Z_h=2^n\prod_{a=1}^M\cosh(\beta h_a).
 ```
 
-Hence the Hessian is diagonal, with entries $`\beta^2\mathrm{sech}^2(\beta h_a)`$. Condition (2) implies $`\vert \beta h_a\vert <1/2`$, so these entries lie between $`\beta^2/2`$ and $`\beta^2`$, which proves (7) in this case as well.
+Hence the Hessian is diagonal, with entries $`\beta^2\mathrm{sech}^2(\beta h_a)`$. Condition (2) implies $`\vert \beta h_a\vert \lt 1/2`$, so these entries lie between $`\beta^2/2`$ and $`\beta^2`$, which proves (7) in this case as well.
 
 ## Curvature is Duhamel covariance
 
@@ -101,7 +101,7 @@ The derivative of the matrix exponential in direction $`A_v`$ is
 ```math
 \left.\frac{d}{dt}e^{-\beta(H_h+tA_v)}\right|_{t=0}
 =-\beta\int_0^1 e^{-(1-s)\beta H_h}A_v e^{-s\beta H_h}\,ds.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Taking its trace yields the first identity in (6). Differentiating once more, including the derivative of the normalizing partition function, yields
@@ -110,7 +110,7 @@ Taking its trace yields the first identity in (6). Differentiating once more, in
 v^{\mathsf T}\nabla_h^2L(h)v
 =\beta^2\int_0^1
 \mathrm{Tr}\!\left(\rho_h^{1-s}\bar A_v\rho_h^s\bar A_v\right)\,ds.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 The integral is the centered Duhamel covariance. Equation (7) therefore bounds it between $`\Vert v\Vert _2^2/2`$ and $`3\Vert v\Vert _2^2/2`$. Ordinary quantum variance requires a further comparison; that step is supplied by the Harris inequality in the covariance proof.
@@ -124,21 +124,21 @@ v=h-g,
 \qquad \delta=\mu(h)-\mu(g),
 \qquad
 K=\int_0^1\nabla^2L(g+tv)\,dt.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The cube is convex, so $`g+tv\in[-1,1]^M`$ at every $`t\in[0,1]`$. The same menu, overlap degree, coefficient bound, and temperature condition therefore apply throughout this integral. The fundamental theorem of calculus and (6) give the exact matrix identity
 
 ```math
 -\beta\delta=Kv.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Integrating (7) preserves the semidefinite bounds:
 
 ```math
 \frac{\beta^2}{2}I_M\preceq K\preceq\frac{3\beta^2}{2}I_M.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 In particular, $`K`$ is invertible, and
@@ -147,7 +147,7 @@ In particular, $`K`$ is invertible, and
 \frac{\beta}{2}\|h-g\|_2
 \le\|\mu(h)-\mu(g)\|_2
 \le\frac{3\beta}{2}\|h-g\|_2.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 The integral in (10) is essential to the statement: all coordinates are controlled by one symmetric positive matrix. No assertion that different coordinatewise mean-value points coincide is required.
@@ -171,7 +171,7 @@ D(\rho_h\|\rho_g)
 D_{\mathrm{sym}}(\rho_h,\rho_g)
 &=-\beta(h-g)\cdot\bigl(\mu(h)-\mu(g)\bigr).
 \end{aligned}
-\tag{14}
+\qquad\text{(14)}
 ```
 
 These are exact exponential-family identities and hold also for noncommuting Hamiltonian terms. Using (11)–(12),
@@ -183,14 +183,14 @@ D_{\mathrm{sym}}(\rho_h,\rho_g)
 &=\beta^2\delta^{\mathsf T}K^{-1}\delta\\
 &\le2\|\delta\|_2^2.
 \end{aligned}
-\tag{15}
+\qquad\text{(15)}
 ```
 
 Quantum Pinsker's inequality with natural logarithms reads
 
 ```math
 D(\rho\|\sigma)\ge\frac12\|\rho-\sigma\|_1^2.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 One way to check this normalization is to measure the projector onto the positive part of $`\rho-\sigma`$. The difference of the resulting binary success probabilities is $`\Vert \rho-\sigma\Vert _1/2`$. Relative entropy cannot increase under this measurement, by [Lindblad's data-processing theorem](https://doi.org/10.1007/BF01609396). Binary relative entropy satisfies $`D_{\mathrm{bin}}(p\Vert q)\ge2(p-q)^2`$: its second derivative with respect to $`p`$ is $`1/[p(1-p)]\ge4`$, and its value and first derivative vanish at $`p=q`$. This proves (16); boundary probabilities follow by continuity.
@@ -203,14 +203,14 @@ Apply (16) in both orders and then (15):
 \le D_{\mathrm{sym}}(\rho_h,\rho_g)
 \le2\|\mu(h)-\mu(g)\|_2^2.
 }
-\tag{17}
+\qquad\text{(17)}
 ```
 
 Equivalently,
 
 ```math
 \|\rho_h-\rho_g\|_1\le\sqrt2\,\|\mu(h)-\mu(g)\|_2.
-\tag{18}
+\qquad\text{(18)}
 ```
 
 Thus a trace-norm separation of at least $`\epsilon`$ forces squared observable separation at least $`\epsilon^2/2`$. Exact equality gives zero observable separation. These are precisely the two implications used by the [testing algorithm](testing-algorithm.md).

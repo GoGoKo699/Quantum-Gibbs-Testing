@@ -27,7 +27,7 @@ The high-temperature input is the uniform bound
 ```math
 \frac{\beta^2}{2}I_M
 \preceq\nabla_h^2\log Z_h
-\preceq\frac{3\beta^2}{2}I_M. \tag{1}
+\preceq\frac{3\beta^2}{2}I_M. \qquad\text{(1)}
 ```
 
 We use the explicit sufficient temperature regime established by Haah, Kothari, and Tang, Corollary 4.4 of [arXiv:2108.04842v3](https://arxiv.org/abs/2108.04842v3). The [model](model.md) fixes the temperature promise used throughout the project. Equation (1) is an inherited equilibrium result. The covariance argument below needs only its upper bound.
@@ -46,7 +46,7 @@ b_h(A,A)
 =\int_0^1
 \mathrm{Tr}\!\left(
 \rho_h^{1-s}\bar A\rho_h^s\bar A
-\right)\,ds. \tag{2}
+\right)\,ds. \qquad\text{(2)}
 ```
 
 Differentiating the matrix exponential gives
@@ -54,13 +54,13 @@ Differentiating the matrix exponential gives
 ```math
 a^\mathsf{T}\nabla_h^2\log Z_h\,a
 =\beta^2 b_h(A,A),
-\qquad A=\sum_i a_iP_i,\quad a\in\mathbb R^M. \tag{3}
+\qquad A=\sum_i a_iP_i,\quad a\in\mathbb R^M. \qquad\text{(3)}
 ```
 
 Consequently, (1) implies
 
 ```math
-b_h(A,A)\le\frac32\|a\|_2^2. \tag{4}
+b_h(A,A)\le\frac32\|a\|_2^2. \qquad\text{(4)}
 ```
 
 ## From Duhamel covariance to ordinary variance
@@ -72,7 +72,7 @@ b_h(A,A)
 \le\mathrm{Var}_{\rho_h}(A)
 \le b_h(A,A)
 +\frac{\beta}{12}
-\left\langle[A,[H_h,A]]\right\rangle_h. \tag{5}
+\left\langle[A,[H_h,A]]\right\rangle_h. \qquad\text{(5)}
 ```
 
 We use the normalization in Brankov and Tonchev, [Eq. (2.30)](https://icmp.lviv.ua/journal/zbirnyk.65/003/art03.pdf), which credits Harris, *Journal of Mathematical Physics* **8**, 1044 (1967). Their paper is *Generalized inequalities for the Bogoliubov–Duhamel inner product with applications in the Approximating Hamiltonian Method*, *Condensed Matter Physics* **14**, 13003 (2011), [doi:10.5488/CMP.14.13003](https://doi.org/10.5488/CMP.14.13003).
@@ -103,7 +103,7 @@ Using $`1\le x\coth x\le1+x^2/3`$, with the continuous value at zero, gives
 Summing over $`r,s`$ proves (5), including degeneracies. It also shows
 
 ```math
-\left\langle[A,[H_h,A]]\right\rangle_h\ge0. \tag{6}
+\left\langle[A,[H_h,A]]\right\rangle_h\ge0. \qquad\text{(6)}
 ```
 
 ### Locality bounds the double commutator
@@ -113,13 +113,13 @@ Expanding $`A=\sum_i a_iP_i`$,
 ```math
 [A,[H_h,A]]
 =\sum_{i,j,\ell}a_i a_j h_\ell
-[P_i,[P_\ell,P_j]]. \tag{7}
+[P_i,[P_\ell,P_j]]. \qquad\text{(7)}
 ```
 
 A nonzero summand must satisfy
 
 ```math
-\ell\in N_j,\qquad i\in N_\ell\cup N_j. \tag{8}
+\ell\in N_j,\qquad i\in N_\ell\cup N_j. \qquad\text{(8)}
 ```
 
 Indeed, the inner commutator vanishes on disjoint supports, and its support is contained in
@@ -135,7 +135,7 @@ Each nested commutator has operator norm at most four. Since $`\vert h_\ell\vert
 \left\langle[A,[H_h,A]]\right\rangle_h
 \right|
 &\le4\sum_{\text{triples satisfying (8)}}|a_i a_j|\\
-&\le8d^2\|a\|_2^2. \tag{9}
+&\le8d^2\|a\|_2^2. \qquad\text{(9)}
 \end{aligned}
 ```
 
@@ -145,7 +145,7 @@ Combining (4), (5), and (9),
 \mathrm{Var}_{\rho_h}\!\left(\sum_i a_iP_i\right)
 \le C_{\mathrm{th}}\|a\|_2^2,
 \qquad
-C_{\mathrm{th}}=\frac32+\frac23\beta d^2. \tag{10}
+C_{\mathrm{th}}=\frac32+\frac23\beta d^2. \qquad\text{(10)}
 ```
 
 Define the real symmetric thermal covariance matrix
@@ -158,7 +158,7 @@ G_{ij}=\frac12\langle P_iP_j+P_jP_i\rangle_h
 Its quadratic form is the variance in (10), so
 
 ```math
-0\preceq G\preceq C_{\mathrm{th}}I_M. \tag{11}
+0\preceq G\preceq C_{\mathrm{th}}I_M. \qquad\text{(11)}
 ```
 
 This step accounts for noncommutativity. An upper bound on Duhamel covariance alone does not automatically bound ordinary variance.
@@ -171,13 +171,13 @@ On each copy, choose the measurement axis independently and uniformly from $`X,Y
 X_i=
 3^{w_i}
 \mathbf 1\{B_u=(P_i)_u\text{ for every }u\in\mathrm{supp}(P_i)\}
-\prod_{u\in\mathrm{supp}(P_i)}s_u. \tag{12}
+\prod_{u\in\mathrm{supp}(P_i)}s_u. \qquad\text{(12)}
 ```
 
 Then
 
 ```math
-\mathbb E_h X_i=\langle P_i\rangle_h. \tag{13}
+\mathbb E_h X_i=\langle P_i\rangle_h. \qquad\text{(13)}
 ```
 
 These are the usual local Pauli classical-shadow estimates; see Huang, Kueng, and Preskill, [*Nature Physics* **16**, 1050–1057 (2020)](https://doi.org/10.1038/s41567-020-0932-7). A single-copy measurement record supplies every coordinate in (12).
@@ -208,7 +208,7 @@ The third case also includes globally commuting strings such as $`XX`$ and $`YY`
 Let $`R=\mathrm{Cov}_h(X)-G`$. By (13), the mean-product terms cancel. Thus $`R_{ij}=0`$ on disjoint pairs. On overlapping pairs, including the diagonal,
 
 ```math
-|R_{ij}|\le3^k. \tag{14}
+|R_{ij}|\le3^k. \qquad\text{(14)}
 ```
 
 For compatible overlap this follows from $`\vert 3^r-1\vert \le3^k`$ and $`\vert \langle P_iP_j\rangle_h\vert \le1`$. For incompatible overlap the symmetrized product has operator norm at most one.
@@ -218,7 +218,7 @@ Each row has at most $`d`$ potentially nonzero entries. Since $`R`$ is real symm
 ```math
 \|R\|_{\mathrm{op}}
 \le \max_i\sum_j|R_{ij}|
-\le d3^k. \tag{15}
+\le d3^k. \qquad\text{(15)}
 ```
 
 ## Covariance bound
@@ -230,7 +230,7 @@ Each row has at most $`d`$ potentially nonzero entries. Since $`R`$ is real symm
 0\preceq\mathrm{Cov}_h(X)\preceq C_\beta I_M,
 \qquad
 C_\beta=\frac32+\frac23\beta(\Delta+1)^2+(\Delta+1)3^k.
-} \tag{16}
+} \qquad\text{(16)}
 ```
 
 The bound holds uniformly over $`h\in[-1,1]^M`$.
@@ -240,7 +240,7 @@ For independent snapshots $`X`$ and $`Y`$ from two admissible sources,
 ```math
 \mathrm{Cov}(X-Y)
 =\mathrm{Cov}(X)+\mathrm{Cov}(Y)
-\preceq2C_\beta I_M. \tag{17}
+\preceq2C_\beta I_M. \qquad\text{(17)}
 ```
 
 These are the covariance estimates used by the [equality tester](testing-algorithm.md). The explicit temperature regime of the model implies $`(2/3)\beta d^2\le1/2`$, so the simpler upper bound $`C_0=2+d3^k`$ may be used for the implemented sample-size rule. The constants are conservative; no optimal prefactor is claimed.
