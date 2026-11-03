@@ -2,30 +2,30 @@
 
 ## Can two unknown thermal sources be compared with local measurements?
 
-This repository gives an optimal copy-complexity theorem for comparing two unknown, potentially noncommuting Gibbs states. Both states share a **known menu of $M$ bounded-weight Pauli interactions with bounded support-overlap degree**, bounded coupling coefficients, and a common known sufficiently high temperature.
+This repository gives an optimal copy-complexity theorem for comparing two unknown, potentially noncommuting Gibbs states. Both states share a **known menu of $`M`$ bounded-weight Pauli interactions with bounded support-overlap degree**, bounded coupling coefficients, and a common known sufficiently high temperature.
 
-For exact equality versus an unhalved global trace-norm separation $\varepsilon$, independent single-qubit Pauli measurements attain
+For exact equality versus an unhalved global trace-norm separation $`\varepsilon`$, independent single-qubit Pauli measurements attain
 
-$$
+```math
 \Theta\!\left(\frac{\sqrt M}{\varepsilon^2}\right)
-$$
+```
 
 total copies in the explicit matching regime below. An arbitrary collective quantum measurement cannot improve this worst-case order. The test compares interaction moments with a quadratic statistic; it does not reconstruct either Hamiltonian.
 
 ### Exact scope
 
-Write $\Delta$ for the support-overlap degree bound, $d=\Delta+1$, and $\beta$ for inverse temperature. The sufficient temperature window is
+Write $`\Delta`$ for the support-overlap degree bound, $`d=\Delta+1`$, and $`\beta`$ for inverse temperature. The sufficient temperature window is
 
-$$
+```math
 0<\beta\leq\frac{1}{100e^6d^8}.
-$$
+```
 
 The upper bound holds for the promised equality-versus-separation problem throughout this window. The matching lower bound applies when
 
-$$
+```math
 0<\varepsilon\leq
 \min\left\{\frac1{16},\frac{\beta}{8}\sqrt{\frac M d}\right\}.
-$$
+```
 
 Constants depend on fixed interaction weight and overlap degree. The temperature condition is conservative. Both inputs must obey the same known-menu Gibbs promise; this is not certification against arbitrary nonthermal alternatives. The [precise model and theorem](science/model.md) state all quantifiers and resource conventions.
 
@@ -41,13 +41,19 @@ Constants depend on fixed interaction weight and overlap degree. The temperature
 | What does the theorem mean for source comparison? | [Interpretation and limits](science/interpretation.md) |
 | Which ingredients are inherited, and how does this compare with earlier work? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 
-The proof connects uniform high-temperature log-partition curvature to a dimension-independent covariance bound for local Pauli scores. An unbiased quadratic statistic detects a squared moment displacement with variance of order $M/N^2$ under equality. A random-sign commuting subfamily supplies the converse against unrestricted quantum measurements. The existing curvature theorem, Harris inequality, Pauli estimator, quadratic statistic and product-testing mechanism are credited in their respective proof pages.
+The proof connects uniform high-temperature log-partition curvature to a dimension-independent covariance bound for local Pauli scores. An unbiased quadratic statistic detects a squared moment displacement with variance of order $`M/N^2`$ under equality. A random-sign commuting subfamily supplies the converse against unrestricted quantum measurements. The existing curvature theorem, Harris inequality, Pauli estimator, quadratic statistic and product-testing mechanism are credited in their respective proof pages.
 
-When $M$ is proportional to the qubit count $n$, the copy rate is order $\sqrt n/\varepsilon^2$. Full-register readout and processing still require order $n^{3/2}/\varepsilon^2$ elementary work for fixed locality and success probability. The copy-access model does not establish a physical thermalization-time bound.
+When $`M`$ is proportional to the qubit count $`n`$, the copy rate is order $`\sqrt n/\varepsilon^2`$. Full-register readout and processing still require order $`n^{3/2}/\varepsilon^2`$ elementary work for fixed locality and success probability. The copy-access model does not establish a physical thermalization-time bound.
+
+## Learn the argument
+
+The [thirty-milestone map](learning/MILESTONES.md) develops twelve background targets and eighteen stages of the scientific argument. Its single educational anchor is John Watrous's *The Theory of Quantum Information* (2018). The [Watrous bridge](learning/WATROUS_BRIDGE.md) identifies the relevant sections, translates conventions, and works through a complete one-qubit example before connecting the book's foundations to the research proofs.
 
 ## Reproduce the finite checks
 
 The [verification guide](verification/README.md) gives dependencies, commands, cases and expected output. Its deterministic examples check noncommuting thermal geometry, the local-Pauli measurement model and the statistical identities. They support the implementation and conventions; the linked analytical proofs establish the uniform and asymptotic results.
+
+The [hosted mathematics check](verification/hosted_math/README.md) captures commit-pinned GitHub pages at wide and narrow viewports and compares their rendered mathematical structure with the source. Its captured pages also require visual review.
 
 ## Purpose and contact
 

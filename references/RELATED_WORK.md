@@ -1,16 +1,16 @@
 # Related work and attribution
 
-This comparison concerns the precise problem in [the model](../science/model.md): two unknown Gibbs states on the same **known bounded-degree Pauli menu**, a known sufficiently small positive inverse temperature, and exact equality versus a global trace-norm gap. [The upper bound](../science/testing-algorithm.md) and [the collective lower bound](../science/collective-lower-bound.md) match at $\Theta_{k,\Delta}(\sqrt M/\varepsilon^2)$ in the stated error range. Bibliographic metadata and relevant versions were checked on 3 November 2026; reusable entries are in [references.bib](references.bib).
+This comparison concerns the precise problem in [the model](../science/model.md): two unknown Gibbs states on the same **known bounded-degree Pauli menu**, a known sufficiently small positive inverse temperature, and exact equality versus a global trace-norm gap. [The upper bound](../science/testing-algorithm.md) and [the collective lower bound](../science/collective-lower-bound.md) match at $`\Theta_{k,\Delta}(\sqrt M/\varepsilon^2)`$ in the stated error range. Bibliographic metadata and relevant versions were checked on 3 November 2026; reusable entries are in [references.bib](references.bib).
 
 ## The closest quantum Gibbs testing result
 
-Bluhm, Caro, Escudero Gutiérrez, Lee, Oufkir, Rouzé and Shin, [*Certifying and learning local quantum Hamiltonians*, arXiv:2603.29809v1, Theorem 17](https://arxiv.org/html/2603.29809v1), already give a Gibbs-state comparison test when **both states are unknown**. For arbitrary-degree $k$-local Hamiltonians with bounded Pauli coefficients, their theorem uses
+Bluhm, Caro, Escudero Gutiérrez, Lee, Oufkir, Rouzé and Shin, [*Certifying and learning local quantum Hamiltonians*, arXiv:2603.29809v1, Theorem 17](https://arxiv.org/html/2603.29809v1), already give a Gibbs-state comparison test when **both states are unknown**. For arbitrary-degree $`k`$-local Hamiltonians with bounded Pauli coefficients, their theorem uses
 
 ```math
 O\!\left(\frac{\beta^2n^{2k}3^k k\log(n/\delta)}{\eta^4}\right)
 ```
 
-copies and Pauli measurements. In their unhalved trace norm, it distinguishes distance at most $\eta^2/(400\beta n^k)$ from distance at least $2\eta$, with error probability at most $\delta$. It applies at all temperatures and has polynomial classical processing time. Section 1.3 asks for optimal Gibbs certification complexity.
+copies and Pauli measurements. In their unhalved trace norm, it distinguishes distance at most $`\eta^2/(400\beta n^k)`$ from distance at least $`2\eta`$, with error probability at most $`\delta`$. It applies at all temperatures and has polynomial classical processing time. Section 1.3 asks for optimal Gibbs certification complexity.
 
 The present result addresses a restricted high-temperature, known-menu regime and supplies matching upper and lower copy bounds there. It does not resolve their broader all-temperature question. Their Lemma 4 also uses the Gibbs relative-entropy/moment identity underlying the geometry argument here; that identity is an inherited ingredient.
 
@@ -23,7 +23,7 @@ The present result addresses a restricted high-temperature, known-menu regime an
 | Independent local Pauli snapshots | Huang, Kueng and Preskill, [*Predicting many properties of a quantum system from very few measurements*](https://doi.org/10.1038/s41567-020-0932-7), *Nature Physics* **16**, 1050–1057 (2020). The unbiased Pauli estimators are standard classical-shadow estimators. |
 | Quadratic mean comparison | Unbiased quadratic statistics for high-dimensional mean testing are established tools; see Chen and Qin, [*A two-sample test for high-dimensional data with applications to gene-set testing*](https://doi.org/10.1214/09-AOS716), *Annals of Statistics* **38**, 808–835 (2010). We derive the finite-sample variance of the paired-difference statistic directly. |
 | Product lower-bound mechanism | Canonne, Diakonikolas, Kane and Stewart, [*Testing Bayesian Networks*, Theorem 9 and Section 2.2](https://proceedings.mlr.press/v65/canonne17a/canonne17a.pdf). Random signs and a likelihood-ratio second moment give the square-root product-uniformity obstruction. |
-| Fourier norm comparison | Bonami, [*Étude des coefficients de Fourier des fonctions de $L^p(G)$*](https://doi.org/10.5802/aif.357), *Annales de l'Institut Fourier* **20**(2), 335–402 (1970). The $L^2$-to-$L^4$ noise inequality and interpolation establish separation of each fixed alternative. |
+| Fourier norm comparison | Bonami, [*Étude des coefficients de Fourier des fonctions de Lᵖ(G)*](https://doi.org/10.5802/aif.357), *Annales de l'Institut Fourier* **20**(2), 335–402 (1970). The $`L^2`$-to-$`L^4`$ noise inequality and interpolation establish separation of each fixed alternative. |
 
 The current HKT preprint is version 3, revised 15 March 2023; it reports a correction to Lemma 3.9. The cited corollary and constants are taken from that version. HKT's learning accuracy is coordinatewise Hamiltonian-coefficient accuracy, so its error parameter cannot be equated directly with a global state trace-norm threshold. The present proof uses its geometric theorem without reconstructing the Hamiltonian.
 
@@ -31,7 +31,7 @@ The Harris comparison in [the covariance proof](../science/covariance-bound.md),
 
 ## Classical testing and the known-menu restriction
 
-The $\sqrt M/\varepsilon^2$ dependence has classical antecedents. Daskalakis and Pan, [*Square Hellinger Subadditivity for Bayesian Networks and its Applications to Identity Testing*](https://proceedings.mlr.press/v65/daskalakis17a.html), give optimal $O(\sqrt n/\varepsilon^2)$ testing for a product distribution against a known product reference. Their graphical-model results compare structured distributions through local marginals. Noncommuting Gibbs states and their Pauli snapshot distributions do not acquire the bounded-indegree Bayesian factorization used in those results.
+The $`\sqrt M/\varepsilon^2`$ dependence has classical antecedents. Daskalakis and Pan, [*Square Hellinger Subadditivity for Bayesian Networks and its Applications to Identity Testing*](https://proceedings.mlr.press/v65/daskalakis17a.html), give optimal $`O(\sqrt n/\varepsilon^2)`$ testing for a product distribution against a known product reference. Their graphical-model results compare structured distributions through local marginals. Noncommuting Gibbs states and their Pauli snapshot distributions do not acquire the bounded-indegree Bayesian factorization used in those results.
 
 There is a relevant qualification for **two unknown** product distributions: Canonne et al., Theorems 31 and 40, establish the unrestricted rate
 
@@ -51,7 +51,7 @@ Here the menu itself is known and has bounded overlap, even when many coefficien
 
 Chen, Anshu and Nguyen, [*Learning quantum Gibbs states locally and efficiently*, arXiv:2504.02706v1](https://arxiv.org/abs/2504.02706), give efficient local Hamiltonian-learning results beyond the high-temperature regime, with temperature-dependent costs. Their objective is estimating Hamiltonian coefficients; it is different from the equality decision and global trace-norm promise considered here.
 
-Chen and Gilyén, [*Efficiently estimating quantum thermal properties from exponentially fewer samples*, arXiv:2603.16845v2](https://arxiv.org/abs/2603.16845v2), estimate $M$ observables to precision $\varepsilon$ using $O(\log M/\varepsilon^2)$ Gibbs copies **given access to the Hamiltonian and controlled Hamiltonian simulation**. The September 2026 revision retains this access assumption. Those operations are not supplied by the unknown-copy-source model here, so that sample bound is not an alternative algorithm for this testing problem.
+Chen and Gilyén, [*Efficiently estimating quantum thermal properties from exponentially fewer samples*, arXiv:2603.16845v2](https://arxiv.org/abs/2603.16845v2), estimate $`M`$ observables to precision $`\varepsilon`$ using $`O(\log M/\varepsilon^2)`$ Gibbs copies **given access to the Hamiltonian and controlled Hamiltonian simulation**. The September 2026 revision retains this access assumption. Those operations are not supplied by the unknown-copy-source model here, so that sample bound is not an alternative algorithm for this testing problem.
 
 ## The contribution established by these notes
 

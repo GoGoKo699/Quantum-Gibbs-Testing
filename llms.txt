@@ -12,7 +12,10 @@ Compare two unknown Gibbs sources in a known bounded-overlap Pauli family at suf
 - Independent-set reduction, random-sign product family and collective converse: science/collective-lower-bound.md.
 - Physical interpretation, non-Gibbs parity counterexample and limitations: science/interpretation.md.
 - Prior results, inherited tools and comparison scope: references/RELATED_WORK.md and references/references.bib.
+- Thirty conceptual milestones, with twelve background targets and eighteen stages of the scientific argument: learning/MILESTONES.md.
+- Selected Watrous (2018) sections, convention translations and a complete worked example: learning/WATROUS_BRIDGE.md.
 - Executable finite checks and their limits: verification/README.md.
+- Actual hosted mathematics capture and its separate visual-review requirement: verification/hosted_math/README.md.
 
 ## Preserve these distinctions
 
