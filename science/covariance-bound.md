@@ -126,7 +126,7 @@ Each nested commutator has operator norm at most four. Since $`|h_\ell|\le1`$ an
 \left\langle[A,[H_h,A]]\right\rangle_h
 \right|
 &\le4\sum_{\text{triples satisfying (8)}}|a_i a_j|\\
-&\le8d^2\|a\|_2^2. 
+&\le8d^2\|a\|_2^2.
 \end{aligned}
 ```
 Combining (4), (5), and (9),
