@@ -17,13 +17,13 @@ total copies in the explicit matching regime below. An arbitrary collective quan
 Write $`\Delta`$ for the support-overlap degree bound, $`d=\Delta+1`$, and $`\beta`$ for inverse temperature. The sufficient temperature window is
 
 ```math
-0<\beta\leq\frac{1}{100e^6d^8}.
+0\lt \beta\leq\frac{1}{100e^6d^8}.
 ```
 
 The upper bound holds for the promised equality-versus-separation problem throughout this window. The matching lower bound applies when
 
 ```math
-0<\varepsilon\leq
+0\lt \varepsilon\leq
 \min\left\{\frac1{16},\frac{\beta}{8}\sqrt{\frac M d}\right\}.
 ```
 

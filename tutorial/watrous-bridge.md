@@ -50,7 +50,7 @@ A Pauli menu specifies which interactions can occur. Unknown coefficients select
 ```math
 H_h=\sum_{a=1}^M h_aP_a,
 \qquad
-\rho_h=\frac{e^{-\beta H_h}}{\operatorname{Tr}e^{-\beta H_h}}.
+\rho_h=\frac{e^{-\beta H_h}}{\mathrm{Tr}e^{-\beta H_h}}.
 ```
 
 Both laboratories have unknown coefficients, bounded between minus one and one. They share the known menu and the same known inverse temperature beta. The menu's support-overlap graph joins terms that touch a common qubit. Its maximum degree is at most Delta, and the project writes d = Delta + 1. Intersecting supports and noncommuting operators are different notions: two Z interactions can overlap while commuting. The theorem controls overlap, which is enough for its local counting arguments.

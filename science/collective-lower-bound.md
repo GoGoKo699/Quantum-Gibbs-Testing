@@ -10,14 +10,14 @@ Let $`P_1,\ldots,P_M`$ be distinct nonidentity Pauli strings. Their support-over
 
 ```math
 H_h=\sum_{a=1}^M h_aP_a,\qquad
-\rho_h=\frac{e^{-\beta H_h}}{\operatorname{Tr}e^{-\beta H_h}},
+\rho_h=\frac{e^{-\beta H_h}}{\mathrm{Tr}e^{-\beta H_h}},
 \qquad h\in[-1,1]^M.
 ```
 
 Assume $`M\ge1`$ and
 
 ```math
-0<\varepsilon\le
+0\lt \varepsilon\le
 \min\left\{\frac1{16},\frac{\beta\sqrt{M/d}}8\right\}.
 ```
 
@@ -48,14 +48,14 @@ r=\frac{4\varepsilon}{\sqrt L},\qquad t=Lr^2=16\varepsilon^2.
 For each sign vector $`s\in\{-1,+1\}^L`$, define coefficients
 
 ```math
-h_{a_i}(s)=-\frac{s_i\operatorname{arctanh}(r)}{\beta},
+h_{a_i}(s)=-\frac{s_i\mathrm{arctanh}(r)}{\beta},
 \qquad h_a(s)=0\quad\text{for }a\notin\{a_1,\ldots,a_L\}.
 ```
 
 The error assumptions imply $`r\le1/4`$, $`t\le1/16`$, and
 
 ```math
-\operatorname{arctanh}(r)\le2r
+\mathrm{arctanh}(r)\le2r
 =\frac{8\varepsilon}{\sqrt L}\le\beta.
 ```
 
@@ -160,12 +160,12 @@ If $`S\le\sqrt L/(64\varepsilon^2)`$, then
 
 ```math
 \frac{LS^2r^4}{2}\le\frac1{32},\qquad
-\operatorname{TV}(\overline p_S,u_S)
+\mathrm{TV}(\overline p_S,u_S)
 \le\frac12\sqrt{e^{1/32}-1}
-<0.09<\frac13.
+\lt 0.09\lt \frac13.
 ```
 
-The optimal success probability for distinguishing the null from this mixture with equal prior probabilities is $`(1+\operatorname{TV})/2<2/3`$.
+The optimal success probability for distinguishing the null from this mixture with equal prior probabilities is $`(1+\mathrm{TV})/2\lt 2/3`$.
 
 ## 4. Why adaptivity and collective measurements cannot evade the bound
 
@@ -181,7 +181,7 @@ are diagonal in the same known basis. Their uninformative degeneracy labels have
 
 ```math
 \frac12\|\overline\rho_S-\tau^{\otimes S}\|_1
-=\operatorname{TV}(\overline p_S,u_S).
+=\mathrm{TV}(\overline p_S,u_S).
 ```
 
 Trace-norm contractivity therefore bounds every protocol's output distinguishability by the value in Section 3. Equivalently, a POVM on common diagonal states is a stochastic processing of their basis labels, even when its operators are not diagonal. Neither argument restricts the physical measurement used by the tester.
@@ -193,10 +193,10 @@ A protocol succeeding with probability at least $`2/3`$ on the null and on each 
 For fixed $`\Delta`$, the bound is $`\Omega(\sqrt M/\varepsilon^2)`$. Together with [the local-measurement upper bound](testing-algorithm.md), it gives matching scaling at the prescribed high temperature whenever
 
 ```math
-0<\varepsilon\le\min\left\{\frac1{16},\frac{\beta\sqrt{M/d}}8\right\}.
+0\lt \varepsilon\le\min\left\{\frac1{16},\frac{\beta\sqrt{M/d}}8\right\}.
 ```
 
-At any fixed positive allowed $`\beta`$ and fixed $`0<\varepsilon\le1/16`$, the second restriction holds as soon as
+At any fixed positive allowed $`\beta`$ and fixed $`0\lt \varepsilon\le1/16`$, the second restriction holds as soon as
 
 ```math
 M\ge\frac{64d\varepsilon^2}{\beta^2}.

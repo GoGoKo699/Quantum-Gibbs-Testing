@@ -15,7 +15,7 @@ For $`h\in[-1,1]^M`$, define
 ```math
 H_h=\sum_{a=1}^{M}h_aP_a,
 \qquad
-Z_h=\operatorname{Tr}e^{-\beta H_h},
+Z_h=\mathrm{Tr}e^{-\beta H_h},
 \qquad
 \rho_h=Z_h^{-1}e^{-\beta H_h}.
 ```
@@ -26,7 +26,7 @@ The measurement device receives independently prepared copies from either source
 
 ## Equality versus trace-norm separation
 
-For a given $`0<\varepsilon\leq 2`$, decide between the promised cases
+For a given $`0\lt \varepsilon\leq 2`$, decide between the promised cases
 
 ```math
 \mathsf{EQUAL}:\quad \rho_h=\rho_g,
@@ -39,14 +39,14 @@ The trace norm here is **unhalved**. Thus the convention often called trace dist
 The supplied value of $`\Delta`$ may be an upper bound. The sufficient uniform temperature condition is
 
 ```math
-0<\beta\leq\beta_*:=\frac{1}{100e^6d^8}.
+0\lt \beta\leq\beta_*:=\frac{1}{100e^6d^8}.
 ```
 
 This is the conservative high-temperature condition imported from the current Haah–Kothari–Tang analysis; it is not claimed to locate an optimal physical boundary. [Thermal geometry](thermal-geometry.md) gives the exact imported statement and the separate elementary treatment of disjoint interactions.
 
 ## Theorem: optimal copy complexity with local readout
 
-**Upper bound.** For every known menu satisfying the stated assumptions and every promised pair at $`0<\beta\leq\beta_*`$, a test using independent random single-qubit Pauli measurements succeeds with probability at least $`2/3`$ using
+**Upper bound.** For every known menu satisfying the stated assumptions and every promised pair at $`0\lt \beta\leq\beta_*`$, a test using independent random single-qubit Pauli measurements succeeds with probability at least $`2/3`$ using
 
 ```math
 O_{k,\Delta}\!\left(\frac{\sqrt M}{\varepsilon^2}\right)
@@ -67,7 +67,7 @@ with $`N`$ copies of each source, for $`2N`$ copies in all. The statistic can be
 **Lower bound.** For every such fixed known menu, if
 
 ```math
-0<\varepsilon\leq
+0\lt \varepsilon\leq
 \min\left\{\frac1{16},\frac{\beta}{8}\sqrt{\frac M d}\right\},
 ```
 
@@ -90,7 +90,7 @@ For any fixed admissible positive $`\beta`$, the lower-bound range includes fixe
 
 ## Why the rate is possible
 
-Let $`\mu(h)_a=\operatorname{Tr}(\rho_hP_a)`$. Uniform curvature of the log partition function and symmetric relative entropy imply
+Let $`\mu(h)_a=\mathrm{Tr}(\rho_hP_a)`$. Uniform curvature of the log partition function and symmetric relative entropy imply
 
 ```math
 \lVert\rho_h-\rho_g\rVert_1^2

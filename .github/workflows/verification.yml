@@ -35,7 +35,7 @@ jobs:
         env:
           NODE_PATH: ${{ runner.temp }}/math-deps/node_modules
         run: |
-          node verification/hosted/capture_hosted_math.cjs --root "$GITHUB_WORKSPACE" --repository "$GITHUB_REPOSITORY" --revision "$(git rev-parse HEAD)" --output "$RUNNER_TEMP/hosted"
+          node verification/hosted/capture_hosted_math.cjs --root "$GITHUB_WORKSPACE" --repository "$GITHUB_REPOSITORY" --revision "$(git rev-parse HEAD)" --output "$RUNNER_TEMP/hosted" --contract verification/math-contract.json
       - name: Retain verification evidence
         if: always()
         uses: actions/upload-artifact@v4
