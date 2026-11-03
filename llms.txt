@@ -14,6 +14,14 @@ Compare two unknown Gibbs sources in a known bounded-overlap Pauli family at suf
 - Prior results, inherited tools and comparison scope: references/RELATED_WORK.md and references/references.bib.
 - Executable finite checks and their limits: verification/README.md.
 
+## Learning route
+
+- Single educational anchor: John Watrous, The Theory of Quantum Information (Cambridge University Press, 2018). Section references use the author's available 2018 prepublication manuscript, linked from tutorial/watrous-bridge.md.
+- Physical starting example and study navigation: tutorial/README.md.
+- Reader-independent map: tutorial/milestones.md, exactly M01–M30. M01–M12 form background/preliminaries; M13–M30 form narrative/innovation. Each records its central question, understanding target, earlier dependencies and story role, conceptual connection, and source pointers.
+- Focused anchor sections, logarithm/trace-norm translations, and explanations of thermal geometry, measurement noise, quadratic statistics, and the quantum converse: tutorial/watrous-bridge.md.
+- The bridge and milestones supplement the authoritative science pages. Use science/model.md for exact theorem constants and domains, and the linked proof pages for complete derivations. Learning material contains no personal progress records or assessment protocol.
+
 ## Preserve these distinctions
 
 The unhalved trace norm is used. Both sources satisfy the known-menu Gibbs promise with the same known positive inverse temperature and bounded coupling coefficients. The stated temperature bound is sufficient and conservative. The matching lower bound has an explicit epsilon/beta/M range. Exact equality is the null hypothesis; constant-gap tolerant testing is not established. The known interaction menu is stronger than a promise of an unknown sparse interaction graph. Copy complexity is separate from readout workload and physical preparation time. Noncommuting thermal fluctuations use Duhamel covariance, which must not be identified with ordinary covariance without the stated comparison. Finite numerical examples do not prove uniform curvature or a broader temperature theorem.

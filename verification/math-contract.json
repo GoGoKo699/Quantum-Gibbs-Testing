@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 3,
+      "source_sha256": "67d9dc7b2eb4f1b0342667ebfe708cd5ab5d1693e97a2f119300223d79dd02bc",
+      "required_text": [
+        "Θ",
+        "M",
+        "ε",
+        "2"
+      ]
+    },
+    {
+      "path": "README.md",
+      "index": 7,
+      "source_sha256": "a72a50eec740359124e926731ccc06f99a215c2b25cae48ebc58e4998476d56e",
+      "required_text": [
+        "0",
+        "β",
+        "100",
+        "e",
+        "6",
+        "d",
+        "8"
+      ]
+    },
+    {
+      "path": "README.md",
+      "index": 8,
+      "source_sha256": "e132bbec6ec424605bac55ecd2b8bf49c3669c6d109f1d4f1276a7f6d0e78780",
+      "required_text": [
+        "0",
+        "ε",
+        "min",
+        "16",
+        "β",
+        "8",
+        "M",
+        "d"
+      ]
+    }
+  ]
+}
